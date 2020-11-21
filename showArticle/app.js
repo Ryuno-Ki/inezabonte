@@ -43,8 +43,8 @@ function renderBlogPost(doc){
     coverImg.appendChild(image)
 
     //render the blog post itself
-    let content = document.createElement("p")
-    content.textContent = doc.data().post
+    let content = document.createElement("div")
+    content.innerHTML = doc.data().post
     blogPost.insertAdjacentElement("beforeend", content)
     
 
