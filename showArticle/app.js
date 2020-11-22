@@ -44,6 +44,7 @@ function renderBlogPost(doc){
 
     //render the blog post itself
     let content = document.createElement("div")
+    content.setAttribute('class', 'post')
     content.innerHTML = doc.data().post
     blogPost.insertAdjacentElement("beforeend", content)
     

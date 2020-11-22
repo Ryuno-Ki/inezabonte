@@ -49,7 +49,6 @@ main{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    
     margin: 50px 0 50px 0;
 }
 
@@ -58,15 +57,19 @@ main{
 }
 
 .blog-post{
+    align-self: center;
     display: flex;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
 }
 
 .blog-post p{
     width: 80%;
 }
 
+.post{
+    margin-left: 150px;
+}
 /*------------ Comments section------------ */
 
 .comments-section{
@@ -200,11 +203,19 @@ textarea{
     .content{
         grid-template-columns: 90%;
     }
-    
+    .coverImage img{
+        width: 90%;
+    }
+    .post{
+        margin-left: 50px;
+    }
 }
 
 @media screen and (max-width: 500px){
     article{
         padding: 20px;
+    }
+    .post{
+        margin: 0;
     }
 }
